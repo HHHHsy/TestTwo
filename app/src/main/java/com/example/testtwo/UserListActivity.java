@@ -132,7 +132,7 @@ public class UserListActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        swipeRefreshLayout.setRefreshing(false);    // 加载失败也需要 结束下拉刷新空间的加载状态
+                        swipeRefreshLayout.setRefreshing(false);
                     }
                 });
             }
@@ -152,19 +152,16 @@ public class UserListActivity extends AppCompatActivity {
                     studentList.add(user);
                 }
 
-                // 数据有了
-                // 如果没有数据  则  .size() = 0
-
-                dataList.clear();           //  清空数据，避免重复拼接
-                dataList.addAll(studentList);   // 拼接从网络加载的数据
+                dataList.clear();
+                dataList.addAll(studentList);
 
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
 
-                        currentPage = 0;    // 重置页码
-                        adapter.setNewData(dataList);   // 重置 adapter 的状态
-                        swipeRefreshLayout.setRefreshing(false);    // 结束下拉刷新空间的加载状态
+                        currentPage = 0;
+                        adapter.setNewData(dataList);
+                        swipeRefreshLayout.setRefreshing(false);
                     }
                 });
 
