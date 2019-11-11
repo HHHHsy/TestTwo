@@ -10,67 +10,65 @@ class User {
 //         "      \"total_wordage\": 472764,\n" +
 //         "      \"is_following_user\": false\n" +
 
-    private int id;
-    private String slug;
-    private String nickname;
-    private String avatar_source;
-    private long total_likes_count;
-    private long total_wordage;
-    private boolean is_following_user;
+//    private int id;
+//    private String sid;
+//    private String sage;
+//    private String avatar_source;
+//    private long total_likes_count;
+//    private long total_wordage;
+//    private boolean is_following_user;
+    private Long id;
+    private String sid;
+    private String sname;
+    private Integer sage;
+    private Integer ssex;
+    private String sremakers;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getSlug() {
-        return slug;
+    public String getSid() {
+        return sid;
     }
 
-    public void setSlug(String slug) {
-        this.slug = slug;
+    public void setSid(String sid) {
+        this.sid = sid;
     }
 
-    public String getNickname() {
-        return nickname;
+    public String getSname() {
+        return sname;
     }
 
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
+    public void setSname(String sname) {
+        this.sname = sname;
     }
 
-    public String getAvatar_source() {
-        return avatar_source;
+    public Integer getSage() {
+        return sage;
     }
 
-    public void setAvatar_source(String avatar_source) {
-        this.avatar_source = avatar_source;
+    public void setSage(Integer sage) {
+        this.sage = sage;
     }
 
-    public long getTotal_likes_count() {
-        return total_likes_count;
+    public Integer getSsex() {
+        return ssex;
     }
 
-    public void setTotal_likes_count(long total_likes_count) {
-        this.total_likes_count = total_likes_count;
+    public void setSsex(Integer ssex) {
+        this.ssex = ssex;
     }
 
-    public long getTotal_wordage() {
-        return total_wordage;
+    public String getSremakers() {
+        return sremakers;
     }
 
-    public void setTotal_wordage(long total_wordage) {
-        this.total_wordage = total_wordage;
-    }
-
-    public boolean isIs_following_user() {
-        return is_following_user;
-    }
-
-    public void setIs_following_user(boolean is_following_user) {
-        this.is_following_user = is_following_user;
+    public void setSremakers(String sremakers) {
+        this.sremakers = sremakers;
     }
 }

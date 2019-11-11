@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             User user = jsonArray.getJSONObject(i).toJavaObject(User.class);
             userList.add(user);
         }
-        Toast.makeText(this,"ok!!!!!" +userList.size(),Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"解析完成条数" +userList.size(),Toast.LENGTH_SHORT).show();
 
     }
 
